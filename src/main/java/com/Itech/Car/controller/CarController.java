@@ -33,7 +33,7 @@ public class CarController {
     @DeleteMapping("{id}")
     public ResponseEntity<Void> deleteCar(@PathVariable int id){
         carService.deleteCarById(id);
-        return new ResponseEntity("Deleted success",HttpStatus.OK);
+        return new ResponseEntity("Deleted success ok",HttpStatus.OK);
     }
 
     @PutMapping()
